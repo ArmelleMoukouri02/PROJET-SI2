@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sign-Up</title>
+    </head>
+    <body>
+        <div class="form">
+            <h3 class="titre">Inscription</h3>
+            <form action="##" method="post">
+                <p>Noms :</p>
+                <input type="text" name="noms" id="noms" placeholder="Entrez votre nom" required/>
+                <p>Prenoms :</p>
+                <input type="text" name="prenoms" id="prenoms" placeholder="Entrez votre prénom" required/>
+                <p>Adresse E-mail :</p>
+                <input type="email" name="mail" id="mail" placeholder="Entrez votre adresse email" required/><br/><br/>
+                <label for="Sexe">Sexe :</label>
+                <select name="sexe" id="sexe">
+                        <option value="homme">Masculin</option>
+                        <option value="femme">Feminin</option>
+                </select> <br/><br/>
+                <input type="submit" value="Envoyez"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Effacer">
+            </form>
+        </div>
+    </body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 2400px;
+            height: 1250;
+            -webkit-background-size: cover;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(194, 154, 166, 0.5);
+        }
+        .form{
+            position:absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,0.5);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #fff;
+        }
+        .form:hover{
+            background-color:  rgba(100,0,0,0.5);
+        }
+        .titre{
+            margin: 0;
+            padding: 0 0 20px;
+            font-weight: bold;
+            color:white;
+            text-align: center;
+        }
+        .form p{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-weight: bold;
+        }
+        .form input,select{
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .form input[type=text], .form input[type=email]{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background-color: transparent;
+            outline: none;
+            height: 40px;
+            display: 16px;
+            color: #fff;
+        }
+        ::placeholder{
+            color: #fff;
+        }
+        .form input[type=submit], .form input[type=reset]{
+            border: none;
+            height: 40px;
+            outline: none;
+            font-size: 15px;
+            background-color: darkgrey;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    </style>
+</html>
